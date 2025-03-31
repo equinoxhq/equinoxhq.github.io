@@ -1,7 +1,12 @@
 /* THIS CSS IS A CRIME AGAINST HUMANITY */
 
+/* font */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+/* icon */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+/* stuff */
 :root {
     --dc-font: "Adwaita Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
     --dc-font-mono: "Adwaita Mono", "Iosevka Mono", ui-monospace,
@@ -15,10 +20,26 @@
     --dc-ac-1: #364d6a; /* temp fix */
     /*--dc-ac-1: light-dark(#c2daf7, #364d6a)*/
 
+    --full-mono: light-dark(#000, #fff);
     --active-button: light-dark(#e6e6e6, #3a3a3a);
     --darker-text: light-dark(#8f8f91, #a4a4a5);
 }
 
+.material-symbols-outlined {
+    font-variation-settings:
+        "FILL" var(--full-mono),
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 24;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* other */
 a {
     text-decoration: none;
 }
@@ -71,12 +92,6 @@ nav ul li:hover {
 .important-button {
     background-color: var(--dc-lk-1);
     border-radius: 6px;
-}
-
-.flex-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .darker-text {
