@@ -13,31 +13,27 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="author" content="Lution" />
-        <link rel="icon" href="../assets/lution.svg" />
+        <link rel="icon" href="/assets/lution.svg" />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@4"
         />
-        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
         <header>
             <div class="flex-container">
                 <img
-                    src="../assets/lution.svg"
+                    src="assets/lution.svg"
                     alt="The Lution logo"
                     width="52"
                     height="auto"
                 />
-                <h1>Lution Docs</h1>
+                <h1>Lution</h1>
             </div>
             <p class="darker-text">
-                {% if page.text %}
-                    {{ page.text }}
-                {% else %}
-                    An boostrapper for Sober made by using python
-                {% endif %}
+                An boostrapper for Sober made by using python
             </p>
             <nav>
                 <ul>
@@ -65,7 +61,7 @@
                     <div style="padding: 2px"></div>
                     <li>
                         <a
-                            href="/pages/docs.html" class="active-button"
+                            href="/pages/docs.html"
                         >
                             <svg
                                 class="nav-icon icon-color"
@@ -123,9 +119,9 @@
             {{ content }}
         </main>
 
-            <footer>
-                {% include footer.html %}
-            </footer>
+        <footer>
+            {% include footer.html %}
+        </footer>
         <script></script>
     </body>
 </html>
