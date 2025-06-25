@@ -113,3 +113,19 @@ nav ul li a {
     align-items: center;
     gap: 0.5em;
 }
+
+sub {
+    font-size: 10px;
+    color : #808080;
+}
+
+
+pre {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: "Fira Code", monospace;
+  font-size: 0.9rem;
+  margin: 1em 0;
+}
+
