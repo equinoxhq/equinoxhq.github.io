@@ -2,21 +2,22 @@
 
 /* font from ggle inc */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 /* icon from gogle */
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 
 /* stuff */
 :root {
-    --dc-font: "Adwaita Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+    --dc-font: "Lexend", "Inter", ui-sans-serif, system-ui, sans-serif;
     --dc-font-mono: "Adwaita Mono", "Iosevka Mono", ui-monospace,
         "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
     --dc-tx-1: light-dark(##323232, #ffffff);
     --dc-tx-2: light-dark(##2b2b2b, #ffffff);
     --dc-lk-1: light-dark(#3584e4, #3584e4);
     --dc-bg-3: display(none);
-    --dc-bg-1: light-dark(#ffffff, #363636);
-    --dc-bg-2: light-dark(#fafafa, #222226);
+    --dc-bg-1: light-dark(#ffffff, #111111);
+    --dc-bg-2: light-dark(#fafafa, #000000);
     --dc-ac-1: #364d6a; /* temp fix */
     /*--dc-ac-1: light-dark(#c2daf7, #364d6a)*/
 
@@ -112,3 +113,19 @@ nav ul li a {
     align-items: center;
     gap: 0.5em;
 }
+
+sub {
+    font-size: 10px;
+    color : #808080;
+}
+
+
+pre {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: "Fira Code", monospace;
+  font-size: 0.9rem;
+  margin: 1em 0;
+}
+
