@@ -30,10 +30,14 @@
                     width="52"
                     height="auto"
                 />
-                <h1>Lution</h1>
+                <h1>Lution Docs</h1>
             </div>
             <p class="darker-text">
-                An boostrapper for Sober made by using python
+                {% if page.text %}
+                    {{ page.text }}
+                {% else %}
+                    An boostrapper for Sober made by using python
+                {% endif %}
             </p>
             <nav>
                 <ul>
