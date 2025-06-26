@@ -1,0 +1,73 @@
+---
+layout : Lothersdoc
+text : i bet you cant do this
+---
+
+<h1>How to Create Your Own Marketplace Provider</h1>
+
+<h3>1. Fork this <a href="https://github.com/Lutionhq/Lution-Marketplace">Repo</a></h3>
+<p>Click the Fork button at the top of the page to get started.</p>
+
+<h3>2. Add your mod or theme</h3>
+<p>• Put your mod zip file in: <code>Assets/Mods/Content</code></p>
+<p>• Put your theme zip file in: <code>Assets/Theme/Content</code></p>
+<p>• Drop your thumbnail file in: <code>Assets/thumbnails</code></p>
+
+<h3>3. Update the config so Lution knows what to do</h3>
+<p>
+    <h2>Step 1: <code>content.json</code><br></h2>
+    You need to tell Lution what each mod or theme is.
+</p>
+<p><strong>For mods:</strong> Edit <code>Assets/Mods/content.json</code></p>
+
+<p><strong>For Themes:</strong> Edit <code>Assets/Themes/content.json</code></p>    
+
+<p>Example format :</p>
+
+<pre><code>[
+  {
+    "title": "My Mod",
+    "body": "My first ever mod",
+    "image": "https://yourimage.com/image.png",
+    "button": "Download",
+    "creator": "you",
+    "version": "version-xxxxxxxxxxxxxxxx",
+    "sb": "unknown"
+  }
+]
+</code></pre>
+
+<p>What each field means:</p>
+
+<ul>
+  <li><code>title</code>: Name of the mod/theme</li>
+  <li><code>body</code>: Short description</li>
+  <li><code>image</code>: Thumbnail image URL (GitHub, Catbox, etc.)</li>
+  <li><code>button</code>: Just leave as "Download"</li>
+  <li><code>creator</code>: The creator of the mod/theme</li>
+  <li><code>version</code>: The version that compatible with the mod/theme</li>
+  <li><code>sb</code>: Stability status (<code>stable</code>, <code>unstable</code>, or <code>unknown</code>)</li>
+</ul>
+
+<p>Same structure applies for themes.</p>
+<p>
+    <h2>Step 2: <code>info.json</code><br></h2>
+    This tells Lution the actual file paths for your mods/themes. Example for mods (<code>Assets/Themes/info.json</code>):
+</p>
+
+<pre><code>[
+  { "name": "My Mod", "path": "Assets/Mods/Content/mymods.zip" }
+]</code></pre> 
+
+<strong>Important :</strong>
+
+<ul>
+    <li>The <code>"name"</code> must match exactly with the <code>"title"</code> in <code>content.json</code></li>
+    <li>The <code>"path"</code> is the full path to your <code>.zip</code> in your repo</li>
+
+</ul>
+
+<h3>4. Config the Marketplace setting</h3>
+<p>
+When you're done, go to <strong> Marketplace Settings</strong>  and set your marketplace provider name to your repo. (e.g <code>YourUser/Lution-Marketplace</code>)
+</p>
