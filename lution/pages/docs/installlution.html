@@ -34,3 +34,25 @@ $ ./run.sh
 
 <h2>Manual Install</h2>
 
+<h3>1. Clone the Repo</h3>
+
+<pre><code>git clone https://github.com/Lutionhq/Lution.git
+cd Lution</code></pre>
+
+<h3>2. Set Up a Virtual Environment</h3>
+
+<pre><code>python3 -m venv venv
+source venv/bin/activate</code></pre>
+
+<h3>3. Install Dependencies</h3>
+<pre><code>cd src/Lution
+pip install -r requirements.txt</code></pre>
+
+<h4>3.1 Optional step</h4>
+<p>If you are using Debian based distro, you might need to run</p>
+
+<code>sudo apt install python3.12-venv</code>
+<h3>4 Run it</h3>
+<code>python3 -m streamlit run main.py</code>
+<p>or</p>
+<code>streamlit run main.py</code>
