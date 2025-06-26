@@ -18,7 +18,7 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@4"
         />
-        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="/css/lutionstyle.css" />
     </head>
 
     <body>
@@ -30,15 +30,19 @@
                     width="52"
                     height="auto"
                 />
-                <h1>Lution</h1>
+                <h1>Lution Docs</h1>
             </div>
             <p class="darker-text">
-                An boostrapper for Sober made by using python
+                {% if page.text %}
+                    {{ page.text }}
+                {% else %}
+                    An boostrapper for Sober made by using python
+                {% endif %}
             </p>
             <nav>
                 <ul>
                     <li>
-                        <a href="/">
+                        <a href="/lution">
                             <svg
                                 class="nav-icon icon-color"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +65,7 @@
                     <div style="padding: 2px"></div>
                     <li>
                         <a
-                            href="/pages/docs.html"
+                            href="/lution/pages/docs.html" class="active-button"
                         >
                             <svg
                                 class="nav-icon icon-color"
@@ -119,9 +123,9 @@
             {{ content }}
         </main>
 
-        <footer>
-            {% include footer.html %}
-        </footer>
+            <footer>
+                {% include footer.html %}
+            </footer>
         <script></script>
     </body>
 </html>
